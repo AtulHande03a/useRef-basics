@@ -1,10 +1,11 @@
 import "./styles.css";
-import UserefBasics from "./useRef";
+import Setup from "./useReducer/setup";
+//import UserefBasics from "./useRef";
 
 export default function App() {
   return (
     <div className="container">
-      <UserefBasics />
+      <Setup />
     </div>
   );
 }
