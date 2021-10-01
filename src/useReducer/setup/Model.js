@@ -1,5 +1,9 @@
-const Model = () => {
-  return <p>I'm model</p>;
+const Model = ({ modalContent }) => {
+  return (
+    <div className="modal">
+      <p>{modalContent}</p>
+    </div>
+  );
 };
 
 export default Model;
