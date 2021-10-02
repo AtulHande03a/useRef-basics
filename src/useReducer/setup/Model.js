@@ -1,4 +1,11 @@
-const Model = ({ modalContent }) => {
+import { useEffect } from "react";
+
+const Model = ({ modalContent, closeModal }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      closeModal();
+    }, 3000);
+  });
   return (
     <div className="modal">
       <p>{modalContent}</p>
